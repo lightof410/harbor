@@ -6,7 +6,7 @@
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2095/badge)](https://bestpractices.coreinfrastructure.org/projects/2095)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c8d726c9cfd047ffaf681449d673f246)](https://www.codacy.com/app/goharbor/harbor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=goharbor/harbor&amp;utm_campaign=Badge_Grade)
 [![Nightly Status](https://us-central1-eminent-nation-87317.cloudfunctions.net/harbor-nightly-result)](https://www.googleapis.com/storage/v1/b/harbor-nightly/o)
-[![Conformance Status](https://github.com/goharbor/harbor/workflows/conformance_test/badge.svg)](https://github.com/goharbor/harbor/actions?query=workflow%3Aconformance_test)
+[![Conformance Status](https://github.com/goharbor/harbor/workflows/conformance_test/badge.svg)](https://github.com/goharbor/harbor/actions?query=workflow%3ACONFORMANCE_TEST)
 </br>
 
 |![notification](docs/img/bell-outline-badged.svg)Community Meeting|
@@ -34,7 +34,7 @@ Harbor is hosted by the [Cloud Native Computing Foundation](https://cncf.io) (CN
 * **LDAP/AD support**: Harbor integrates with existing enterprise LDAP/AD for user authentication and management, and supports importing LDAP groups into Harbor that can then be given permissions to specific projects.  
 * **OIDC support**: Harbor leverages OpenID Connect (OIDC) to verify the identity of users authenticated by an external authorization server or identity provider. Single sign-on can be enabled to log into the Harbor portal.  
 * **Image deletion & garbage collection**: System admin can run garbage collection jobs so that images(dangling manifests and unreferenced blobs) can be deleted and their space can be freed up periodically.
-* **Notary**: Support signing container images using Docker Content Trust (leveraing Notary) for guaranteeing authenticity and provenance.  In additon, policies that prevent unsigned images from being deployed can also be activated.
+* **Notary**: Support signing container images using Docker Content Trust (leveraging Notary) for guaranteeing authenticity and provenance.  In additon, policies that prevent unsigned images from being deployed can also be activated.
 * **Graphical user portal**: User can easily browse, search repositories and manage projects.
 * **Auditing**: All the operations to the repositories are tracked through logs.
 * **RESTful API**: RESTful APIs are provided to facilitate administrative operations, and are easy to use for integration with external systems. An embedded Swagger UI is available for exploring and testing the API.
@@ -59,7 +59,7 @@ The [compatibility list](./docs/harbor_compatibility_list.md) document provides 
 
 **On a Linux host:** docker 17.06.0-ce+ and docker-compose 1.18.0+ .
 
-Download binaries of **[Harbor release ](https://github.com/vmware/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
+Download binaries of **[Harbor release ](https://github.com/vmware/harbor/releases)** and follow **[Installation & Configuration Guide](docs/README.md)** to install Harbor.
 
 If you want to deploy Harbor on Kubernetes, please use the **[Harbor chart](https://github.com/goharbor/harbor-helm)**.
 
